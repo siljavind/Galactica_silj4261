@@ -8,9 +8,9 @@
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public Position position { get; set; } // Could use ValueTuple
+        public Position Position_ { get; set; } // Could use ValueTuple
 
-        internal class Position // TODO Nested ooor? 
+        public class Position // TODO Nested ooor? 
         {
             public int X { get; set; }
             public int Y { get; set; }

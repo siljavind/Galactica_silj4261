@@ -6,9 +6,9 @@
     }
     internal class Star : SpaceObjects
     {
-        public StarType Type { get; set; }
+        public StarType StarType { get; set; }
         public int Temperature { get; set; }
 
-        List<Planet> Planet = new();
+        public List<Planet> Planets = new();
     }
 }

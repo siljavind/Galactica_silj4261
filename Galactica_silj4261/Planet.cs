@@ -5,12 +5,13 @@
         public double Diameter { get; set; } // In meters 
         public double RotationPeriod { get; set; } // In hours
         public double RevolutionPeriod { get; set; } // In days
+        public PlanetType PlanetType { get; set; } // NOT MENTIONED IN TASK
 
-        List<Moon> Moon = new();
+        public List<Moon> Moons = new();
 
-        double Distance(Star star, Planet planet) // TODO Cleanup on aisle 13
+        public double Distance(Star star, Planet planet) // TODO Cleanup on aisle 13
         {
-            double distance = Math.Sqrt(Math.Pow(star.position.X - star.position.Y, 2) + Math.Pow(planet.position.X - planet.position.Y, 2));
+            double distance = Math.Sqrt(Math.Pow(star.Position_.X - star.Position_.Y, 2) + Math.Pow(planet.Position_.X - planet.Position_.Y, 2));
             return distance;
         }
     }
