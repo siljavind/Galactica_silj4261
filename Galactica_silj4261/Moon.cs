@@ -2,5 +2,11 @@
 {
     sealed class Moon : Planet // TODO Is sealed correct?
     {
+        public Planet Orbiting { get; set; }
+
+        void Distance()
+        {
+
+        }
     }
 }

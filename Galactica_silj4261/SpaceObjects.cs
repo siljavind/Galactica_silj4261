@@ -4,22 +4,22 @@
     {
         YellowDwarf, White, BlueNeutron, RedGiant
     }
-    abstract class SpaceObjects // Abstract - can be inherited, but not instansiated
+    abstract class SpaceObjects // Abstract - can be inherited, but not instantiated
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public Position Position { get; set; } //Could use ValueTuple
+        public Position position { get; set; } // Could use ValueTuple
 
-        class Position
+        internal class Position // TODO Nested ooor? 
         {
-            public int PositionX { get; set; }
-            public int PositionY { get; set; }
+            public int X { get; set; }
+            public int Y { get; set; }
 
             public override string ToString()
             {
-                return $"({PositionX},{PositionY})";
+                return $"({X},{Y})";
             }
         }
-
     }
+
 }
