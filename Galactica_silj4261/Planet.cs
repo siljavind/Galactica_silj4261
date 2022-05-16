@@ -9,9 +9,9 @@
 
         public List<Moon> Moons = new();
 
-        public double Distance(Star star, Planet planet) // TODO Cleanup on aisle 13
+        public double Distance(Star star, Planet planet)
         {
-            double distance = Math.Sqrt(Math.Pow(star.Position_.X - star.Position_.Y, 2) + Math.Pow(planet.Position_.X - planet.Position_.Y, 2));
+            double distance = Math.Sqrt(Math.Pow(star.position.X - star.position.Y, 2) + Math.Pow(planet.position.X - planet.position.Y, 2));
             return distance;
         }
     }

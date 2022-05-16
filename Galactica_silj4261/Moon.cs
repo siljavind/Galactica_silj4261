@@ -6,7 +6,7 @@
 
         public double Distance(Planet planet, Moon moon)
         {
-            double distance = Math.Sqrt(Math.Pow(planet.Position_.X - planet.Position_.Y, 2) + Math.Pow(moon.Position_.X - moon.Position_.Y, 2));
+            double distance = Math.Sqrt(Math.Pow(planet.position.X - planet.position.Y, 2) + Math.Pow(moon.position.X - moon.position.Y, 2));
             return distance;
         }
     }
